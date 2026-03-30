@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subha Harini | Portfolio</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 18px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+nav a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #2563eb;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+.hero span {
+  color: #2563eb;
+}
+.hero p {
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+/* SECTION */
+section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+/* SKILLS */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+.skill {
+  background: #e0f2fe;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* LINKS */
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* BUTTON */
+button {
+  margin-top: 10px;
+  padding: 10px 18px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background: #1d4ed8;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <h1>Hi, I'm <span>Subha Harini</span> 👋</h1>
+  <p>Computer Science Engineering Student | Aspiring Developer</p>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a first-year Computer Science Engineering student.
+      I am passionate about programming and currently learning web development.
+      I enjoy building simple and creative projects.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">C</div>
+    <div class="skill">Python</div>
+    <div class="skill">C++</div>
+    <div class="skill">HTML (Learning)</div>
+    <div class="skill">CSS (Learning)</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    
+    <p>
+      Email: 
+      <a href="mailto:harini.sh1309@gmail.com">
+        harini.sh1309@gmail.com
+      </a>
+    </p>
+
+    <p>
+      LinkedIn: 
+      <a href="https://www.linkedin.com/in/subha-harini-623276377" target="_blank">
+        View My Profile
+      </a>
+    </p>
+
+    <button onclick="hello()">Say Hello</button>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Subha Harini
+</footer>
+
+<script>
+function hello() {
+  alert("Thanks for visiting my portfolio!");
+}
+</script>
+
+</body>
+</html>
